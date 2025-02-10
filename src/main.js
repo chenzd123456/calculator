@@ -7,21 +7,12 @@ import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import router from './router'
 
+import { messages, locale, fallbackLocale } from '@/i18n'
+
 const i18n = createI18n({
-  locale: 'en',
-  fallbackLocale: 'en',
-  messages: {
-    en: {
-      message: {
-        hello: 'hello world',
-      },
-    },
-    zh: {
-      message: {
-        hello: '你好，世界',
-      },
-    },
-  },
+  locale,
+  fallbackLocale,
+  messages,
 })
 
 const app = createApp(App)
