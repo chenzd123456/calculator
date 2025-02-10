@@ -1,4 +1,4 @@
 <template>
-  <h1>Home View</h1>
+  <h1 class="text-xl text-black">Home View</h1>
   <p>Hello world</p>
 </template>
