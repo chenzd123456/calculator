@@ -1,57 +1,100 @@
-# calculator
+# Calculator App
 
-This template should help get you started developing with Vue 3 in Vite.
+[简体中文文档](./doc/README_CN.md)
 
-## Recommended IDE Setup
+A modern calculator application built with Vue.js and Tauri, providing a cross-platform desktop experience.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Customize configuration
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Responsive design
+- Cross-platform support (Windows, macOS, Linux)
+- Storybook component documentation
+- End-to-end testing with Cypress
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Installation
 
-## Project Setup
+1. Clone the repository:
 
-```sh
-yarn
-```
+   ```bash
+   git clone https://github.com/yourusername/calculator.git
+   cd calculator
+   ```
 
-### Compile and Hot-Reload for Development
+2. Install dependencies:
 
-```sh
+   ```bash
+   yarn install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   yarn dev
+   ```
+
+## Usage
+
+Run the application in development mode:
+
+```bash
 yarn dev
 ```
 
-### Compile and Minify for Production
+Build the application for production:
 
-```sh
+```bash
 yarn build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Testing
 
-```sh
+Run unit tests:
+
+```bash
 yarn test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+Run end-to-end tests:
 
-```sh
-yarn test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-yarn build
+```bash
 yarn test:e2e
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Storybook
 
-```sh
-yarn lint
+View component documentation:
+
+```bash
+yarn storybook
 ```
+
+## Building for Desktop
+
+To build the desktop application using Tauri:
+
+1. Install Tauri CLI (if not already installed):
+
+   ```bash
+   cargo install tauri-cli
+   ```
+
+2. Build the application:
+
+   ```bash
+   yarn tauri build
+   ```
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/YourFeatureName`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeatureName`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
